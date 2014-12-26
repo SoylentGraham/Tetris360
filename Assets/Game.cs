@@ -29,6 +29,10 @@ public class Game : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
+		//	turn off offscreen (editor time) stuff
+		GameObject.Find ("OffScreen").SetActive (false);
+
 		Grid = new bool[GridWidth, GridHeight];
 
 		CreateBrick (0, 0);
